@@ -33,7 +33,7 @@
         tools:layout="@layout/fragment_my__team" />
     <fragment
         android:id="@+id/edit_team"
-        android:name="com.example.tm_test1.edit_team"
+        android:name="com.example.tm_test1.Edit_team"
         android:label="fragment_edit_team"
         tools:layout="@layout/fragment_edit_team" />
 

@@ -6,13 +6,13 @@
     android:orientation="vertical"
     android:background="@color/lightsteel"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".edit_team">
+    tools:context=".Edit_team">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/playerlist_recyclerview"
+        android:id="@+id/editplayerlist_recyclerview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

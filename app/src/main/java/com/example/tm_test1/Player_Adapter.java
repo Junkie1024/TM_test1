@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.ViewHolder>{
+public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.ViewHolder> {
 
     private ArrayList<Player_List> player_ArrayList;
     private Context context;
@@ -27,7 +27,7 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.ViewHold
     @Override
     public Player_Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate((R.layout.fragment_player__list,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate((R.layout.fragment_player__list), parent, false);
         return new Player_Adapter.ViewHolder(view);
     }
 
@@ -35,7 +35,7 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.ViewHold
     public void onBindViewHolder(@NonNull Player_Adapter.ViewHolder holder, int position) {
 
         holder.player_name.setText(player_ArrayList.get(position).getPlayer_name());
-        holder.player_img.setText(player_ArrayList.get(position).getPlayer_img());
+        holder.player_img.setImageResource(player_ArrayList.get(position).getPlayer_img());
     }
 
     @Override
@@ -43,10 +43,27 @@ public class Player_Adapter extends RecyclerView.Adapter<Player_Adapter.ViewHold
         return player_ArrayList.size();
     }
 
-    public void setOnClickListener(View.OnClickListener clickListener){
+    public void setOnClickListener(View.OnClickListener clickListener) {
 
         playerListener = clickListener;
 
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+        TextView player_name;
+        ImageView player_img;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            player_name = itemView.findViewById(R.id.player_name);
+            player_img = itemView.findViewById(R.id.player_img);
+
+            itemView.setTag(this);
+
+            itemView.setOnClickListener(playerListener);
+        }
     }
 }
 

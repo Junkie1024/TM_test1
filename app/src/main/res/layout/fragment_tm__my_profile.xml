@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightsteel"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_profile"
+        android:background="@color/midnight"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="My Profile"
+        app:titleMarginStart="40dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="22dp"
+        app:cardCornerRadius="50dp"
+        android:elevation="@dimen/cardview_default_elevation">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher_round" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="154dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/lightsteel">
+
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/slategray"
+            android:textSize="25sp"
+            android:gravity="center_vertical"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="247dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/lightsteel">
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:textColor="@color/slategray"
+            android:gravity="center_vertical"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="96dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="333dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/lightsteel">
+
+
+            <RelativeLayout
+                android:layout_width="92dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center_vertical"
+                    android:text="Gender"
+                    android:textColor="@color/slategray"
+                    android:textSize="25sp"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="333dp" />
+
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/male"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="334dp"
+            android:text="Male"
+            android:textSize="25sp"
+            android:gravity="center_vertical"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="246dp"
+            android:layout_marginTop="336dp" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="72dp"
+            android:id="@+id/female"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="283dp"
+            android:layout_marginTop="336dp"
+            android:gravity="center_vertical"
+            android:text="Female"
+            android:textSize="25sp" />
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="426dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/lightsteel">
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Country"
+            android:inputType="text"
+            android:textColor="@color/slategray"
+            android:gravity="center_vertical"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="518dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/lightsteel">
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Phone No."
+            android:inputType="phone"
+            android:textColor="@color/slategray"
+            android:gravity="center_vertical"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="605dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/lightsteel">
+
+        <EditText
+            android:id="@+id/team_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Team Name"
+            android:inputType="text"
+            android:textColor="@color/slategray"
+            android:gravity="center_vertical"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="363dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="697dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/royalblue"
+            app:cardCornerRadius="15dp" >
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="363dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="697dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/royalblue"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="363dp"
+                android:layout_height="75dp">
+
+
+
+                    <Button
+                        android:id="@+id/btn_update_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="79dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/royalblue"
+                        android:text="UPDATE DETAILS"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="779dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/royalblue"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="363dp"
+            android:layout_height="75dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="133dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/royalblue"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

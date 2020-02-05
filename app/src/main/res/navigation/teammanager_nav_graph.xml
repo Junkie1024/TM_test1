@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teammanager_nav_graph"
+    app:startDestination="@id/TM_MyProfile"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/TM_MyProfile"
+        android:name="com.example.tm_test1.TM_MyProfile"
+        android:label="fragment_tm__my_profile"
+        tools:layout="@layout/fragment_tm__my_profile" />
+    <fragment
+        android:id="@+id/player_List"
+        android:name="com.example.tm_test1.Player_List"
+        android:label="fragment_player__list"
+        tools:layout="@layout/fragment_player__list" />
+    <fragment
+        android:id="@+id/player_Details"
+        android:name="com.example.tm_test1.Player_Details"
+        android:label="fragment_player__details"
+        tools:layout="@layout/fragment_player__details" />
+    <fragment
+        android:id="@+id/add_Player"
+        android:name="com.example.tm_test1.Add_Player"
+        android:label="fragment_add__player"
+        tools:layout="@layout/fragment_add__player" />
+    <fragment
+        android:id="@+id/my_Team"
+        android:name="com.example.tm_test1.My_Team"
+        android:label="fragment_my__team"
+        tools:layout="@layout/fragment_my__team" />
+    <fragment
+        android:id="@+id/edit_team"
+        android:name="com.example.tm_test1.edit_team"
+        android:label="fragment_edit_team"
+        tools:layout="@layout/fragment_edit_team" />
+
+</navigation>
